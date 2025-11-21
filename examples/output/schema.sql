@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS public.users (
+  id uuid PRIMARY KEY,
+  name text NOT NULL,
+  email text UNIQUE NOT NULL,
+  age integer DEFAULT 18,
+  profile jsonb,
+  created_at timestamptz DEFAULT now()
+);
+
+CREATE TABLE IF NOT EXISTS public.profiles (
+  id uuid PRIMARY KEY,
+  user_id uuid REFERENCES public.users(id),
+  visibility text DEFAULT 'public',
+  created_at timestamptz DEFAULT now()
+);

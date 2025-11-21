@@ -1,0 +1,147 @@
+╔════════════════════════════════════════════════════════════════╗
+║         SQLSmith - NPM Publishing Instructions 🚀              ║
+╔════════════════════════════════════════════════════════════════╝
+
+✅ YOUR PACKAGE IS READY!
+   - All 15 tests passing
+   - Package size: 12.5 kB (18 files)
+   - .npmignore configured
+   - prepublishOnly script configured
+
+═══════════════════════════════════════════════════════════════
+
+🔧 STEP 1: UPDATE YOUR INFORMATION IN package.json
+
+   Open: package.json
+
+   Update these fields:
+   ─────────────────────────────────────────────────────────────
+   Line 2:  "name": "@YOUR_NPM_USERNAME/sqlsmith"
+            (or just "sqlsmith" for unscoped - check availability first!)
+
+   Line 30: "author": "Your Name <your.email@example.com>"
+
+   Line 36: "url": "git+https://github.com/YOUR_GITHUB_USERNAME/sqlsmith.git"
+
+   Line 39: "url": "https://github.com/YOUR_GITHUB_USERNAME/sqlsmith/issues"
+
+   Line 41: "homepage": "https://github.com/YOUR_GITHUB_USERNAME/sqlsmith#readme"
+
+═══════════════════════════════════════════════════════════════
+
+📤 STEP 2: LOGIN TO NPM
+
+   Run this command:
+   ─────────────────────────────────────────────────────────────
+   npm login
+
+   You'll be prompted for:
+   - Username (your npm username)
+   - Password
+   - Email (must be verified on npmjs.com)
+   - One-time password (if 2FA is enabled)
+
+   💡 Don't have an npm account?
+   Create one at: https://www.npmjs.com/signup
+
+═══════════════════════════════════════════════════════════════
+
+✅ STEP 3: VERIFY LOGIN
+
+   Run:
+   ─────────────────────────────────────────────────────────────
+   npm whoami
+
+   Should show your npm username
+
+═══════════════════════════════════════════════════════════════
+
+🔍 STEP 4: CHECK PACKAGE NAME AVAILABILITY
+
+   If using unscoped name "sqlsmith":
+   ─────────────────────────────────────────────────────────────
+   npm view sqlsmith
+
+   If package doesn't exist, you're good to go!
+   If it exists, use scoped name: @yourusername/sqlsmith
+
+═══════════════════════════════════════════════════════════════
+
+🚀 STEP 5: PUBLISH!
+
+   For SCOPED package (@yourusername/sqlsmith):
+   ─────────────────────────────────────────────────────────────
+   npm publish --access public
+
+   For UNSCOPED package (sqlsmith):
+   ─────────────────────────────────────────────────────────────
+   npm publish
+
+   Note: Tests will run automatically before publish
+
+═══════════════════════════════════════════════════════════════
+
+🎉 STEP 6: VERIFY PUBLICATION
+
+   Check your package page:
+   ─────────────────────────────────────────────────────────────
+   https://www.npmjs.com/package/@yourusername/sqlsmith
+   or
+   https://www.npmjs.com/package/sqlsmith
+
+═══════════════════════════════════════════════════════════════
+
+📦 USERS CAN NOW INSTALL:
+
+   npm install @yourusername/sqlsmith
+   
+   Or use directly with npx:
+   npx @yourusername/sqlsmith init
+
+═══════════════════════════════════════════════════════════════
+
+🔄 FUTURE UPDATES:
+
+   When you want to publish a new version:
+   ─────────────────────────────────────────────────────────────
+   1. Make your changes
+   2. Update version:
+      npm version patch   (0.1.0 → 0.1.1)
+      npm version minor   (0.1.0 → 0.2.0)
+      npm version major   (0.1.0 → 1.0.0)
+   3. Publish again:
+      npm publish --access public
+
+═══════════════════════════════════════════════════════════════
+
+⚠️  IMPORTANT NOTES:
+
+   - You cannot unpublish packages after 72 hours
+   - Each version can only be published once
+   - Package name must be unique on npm
+   - Scoped packages require --access public for first publish
+   - Tests run automatically before publish (prepublishOnly)
+
+═══════════════════════════════════════════════════════════════
+
+📋 QUICK REFERENCE - COMMON COMMANDS:
+
+   Login:          npm login
+   Check login:    npm whoami
+   Publish:        npm publish --access public
+   Update patch:   npm version patch && npm publish --access public
+   Update minor:   npm version minor && npm publish --access public
+   Update major:   npm version major && npm publish --access public
+   Dry run:        npm publish --dry-run
+   Unpublish:      npm unpublish <package>@<version> --force
+   Deprecate:      npm deprecate <package>@<version> "message"
+
+═══════════════════════════════════════════════════════════════
+
+🎯 READY TO PUBLISH? Run these commands in order:
+
+   1. npm login
+   2. npm whoami
+   3. npm publish --access public
+
+Good luck! 🚀

@@ -1,0 +1,35 @@
+# Development files
+.git
+.github
+.gitignore
+.vscode
+.idea
+*.log
+npm-debug.log*
+
+# Test files
+tests/
+*.test.js
+coverage/
+
+# Examples (already in README)
+examples/
+
+# Config files
+.eslintrc*
+.prettierrc*
+sqlsmith.config.js
+
+# Documentation (except README which is included)
+CONTRIBUTING.md
+CHANGELOG.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*~

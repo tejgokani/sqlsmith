@@ -1,0 +1,51 @@
+{
+  "name": "@tej_gokani/sqlsmith",
+  "version": "0.1.0",
+  "description": "SQLSmith converts JavaScript object schemas into clean, safe, Supabase-ready Postgres SQL migration files with schema diffing, CLI tools, and type overrides.",
+  "main": "src/index.js",
+  "type": "module",
+  "bin": {
+    "sqlsmith": "./bin/sqlsmith.js"
+  },
+  "scripts": {
+    "test": "node --test tests/**/*.test.js",
+    "prepublishOnly": "npm test"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "templates/",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "sqlsmith",
+    "postgres",
+    "postgresql",
+    "supabase",
+    "migration",
+    "migrations",
+    "schema-generator",
+    "schema",
+    "sql",
+    "database",
+    "db",
+    "rls",
+    "row-level-security",
+    "cli",
+    "node"
+  ],
+  "author": "TEJ GOKANI <tejmgokani@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tejgokani/sqlsmith.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tejgokani/sqlsmith/issues"
+  },
+  "homepage": "https://github.com/tejgokani/sqlsmith#readme"
+}
