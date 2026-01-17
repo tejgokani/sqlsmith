@@ -491,3 +491,9 @@ npm install
 
 
 <!-- Updated via Git Committer -->
+
+## Installation
+
+```bash
+npm install
+```
