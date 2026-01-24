@@ -512,3 +512,8 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## Usage
 
 See the documentation for more details.
+## Installation
+
+```bash
+npm install
+```
