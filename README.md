@@ -517,3 +517,8 @@ See the documentation for more details.
 ```bash
 npm install
 ```
+## Installation
+
+```bash
+npm install
+```
